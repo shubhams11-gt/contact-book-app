@@ -1,4 +1,0 @@
-new-user23
-rjzApHqt5N2Cnqme
-
-mongodb+srv://new-user23:rjzApHqt5N2Cnqme@cluster0.uy91l1f.mongodb.net/
