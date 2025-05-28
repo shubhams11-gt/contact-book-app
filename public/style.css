@@ -1,85 +1,134 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f7fa;
-  color: #333;
-  margin: 20px;
-  padding: 20px;
+    background: #f4f6f9;
+    color: #333;
+    padding: 40px 20px;
+    max-width: 700px;
+    margin: auto;
 }
+
+/* Headings */
 h1 {
-  color: #2c3e50;
-  text-align: center;
-  margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #2c3e50;
 }
+
+/* Form Styles */
 form {
-  max-width: 500px;
-  margin: auto;
-  background: #fff;
-  padding: 25px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
 }
+
 label {
-  font-weight: bold;
-  display: block;
-  margin-bottom: 6px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 15px;
 }
-input[type="text"],
-input[type="email"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+
+input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 5px;
+    transition: border-color 0.3s ease;
 }
+
+input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
 button {
-  background-color: #3498db;
-  color: white;
-  border: none;
-  padding: 12px 18px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
+
 button:hover {
-  background-color: #2980b9;
+    background-color: #2980b9;
 }
+
 a {
-  color: #3498db;
-  text-decoration: none;
-  margin-right: 15px;
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
 }
+
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
-ul, li {
-  list-style-type: none;
-  padding: 0;
+
+/* Contact List Styles */
+li {
+    list-style: none;
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
 }
-.contact-card {
-  background: white;
-  padding: 15px;
-  margin-bottom: 15px;
-  border-left: 5px solid #3498db;
-  border-radius: 6px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+
+li:nth-child(3n+1) {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #2c3e50;
 }
-.contact-card li {
-  margin-bottom: 6px;
+
+/* Edit and Delete Buttons */
+a[href^="/edit/"], a[href^="/delete/"] {
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 5px;
 }
-.actions {
-  margin-top: 10px;
+
+a[href^="/edit/"] {
+    color: #27ae60;
 }
-.back-link {
-  display: block;
-  text-align: center;
-  margin-top: 30px;
+
+a[href^="/delete/"] {
+    color: #e74c3c;
 }
-.add-btn {
-  display: block;
-  width: max-content;
-  margin: 40px auto;
-  background-color: #2ecc71;
+
+/* Back and Add Buttons */
+a button {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1em;
 }
-.add-btn:hover {
-  background-color: #27ae60;
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    li {
+        font-size: 0.95em;
+    }
 }
