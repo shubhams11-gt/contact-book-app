@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add noew blog</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    </style>
+</head>
+<body>
+    <h2>Add Blogs</h2>
+    <form action="/new" method="post">
+        <input type="text" name="title" id="" placeholder="Blog title"> <br><br>
+        <textarea name="content" placeholder="Blog Content" rows="10" cols="30" required></textarea><br /><br />
+        <button>Submit</button>
+    </form>
+    <br><br>
+    <a href="/">Back to Home Page</a>
+</body>
+</html>
