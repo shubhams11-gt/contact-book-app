@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>All Saved Contacts</h1>
+
+    <%  for ( let contact of contacts ) {  %>
+        <li> <%= contact.name%> </li>
+        <li> <%= contact.phone%> </li>
+        <li> <%= contact.email%> </li>
+
+        <a href="/edit/<%= contact._id %>">✏️ Edit</a>
+
+        <a href="/delete/<%= contact._id %>">❌ Delete</a>
+
+        <a href=""></a>
+    <% }  %>
+
+    <br><br><br>
+
+    <a href="/add"><button>➕ Add New Contact</button></a>
+</body>
+</html>

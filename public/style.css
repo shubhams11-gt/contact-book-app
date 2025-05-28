@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  margin: 20px;
+  padding: 20px;
+}
+h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+}
+form {
+  max-width: 500px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+}
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #2980b9;
+}
+a {
+  color: #3498db;
+  text-decoration: none;
+  margin-right: 15px;
+}
+a:hover {
+  text-decoration: underline;
+}
+ul, li {
+  list-style-type: none;
+  padding: 0;
+}
+.contact-card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-left: 5px solid #3498db;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.contact-card li {
+  margin-bottom: 6px;
+}
+.actions {
+  margin-top: 10px;
+}
+.back-link {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+}
+.add-btn {
+  display: block;
+  width: max-content;
+  margin: 40px auto;
+  background-color: #2ecc71;
+}
+.add-btn:hover {
+  background-color: #27ae60;
+}
